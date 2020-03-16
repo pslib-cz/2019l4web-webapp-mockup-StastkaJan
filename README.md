@@ -13,6 +13,8 @@ Zachraňte celé lidstvo! Zabraňte viru uniknout!
 - má za úkol zabránit uniknutí virusu, toho docílí tak, že zamezí virusu všechny možnosti pohybu aniž by se virus dotkl kraje hrací desky
 - kliknutím může zabrat svá pole kdekoli chce (nemusí se jakkoli dotýkat)
 - jeho políčko je značeno symbolem léku (class="cure")
+### Konec hry
+- po skončení hry se přidá na aside class="loose" pro prohru nebo class="win" pro výhru
 
 ## Cíl
 Cílem hráče je zabránit viru uniknout.
