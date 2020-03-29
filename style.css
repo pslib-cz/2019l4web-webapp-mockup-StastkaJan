@@ -26,26 +26,58 @@ table tr td.cure {
   background-image: url("cure.svg");
   background-color: rgba(0, 0, 255, 0.5);
 }
-aside {
-  position: absolute;
+body > section {
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-aside.loose {
+body > section.result.loose {
+  background-color: whitesmoke;
+  color: red;
+  display: flex;
+}
+body > section.result.win {
+  background-color: whitesmoke;
+  color: blue;
+  display: flex;
+}
+body > section.result h2 {
+  display: none;
+  font-size: 3rem;
+  margin: 10px;
+}
+body > section.result a {
+  font-size: 1.5rem;
+  padding: 10px;
+  text-decoration: none;
+	border: 2px solid;
+  border-radius: 15px;
+  transition: .2s ease-in-out;
+  color: whitesmoke;
+}
+body > section.result.loose a {
   background-color: red;
 }
-aside.win {
+body > section.result.loose a:hover {
+  color: red;
+  background-color: whitesmoke;
+}
+body > section.result.win a {
   background-color: blue;
 }
-aside p {
-  display: none;
+body > section.result.win a:hover {
+  color: blue;
+  background-color: whitesmoke;
 }
-aside.win p:first-of-type {
-  display: unset;
+body > section.result.win h2:first-of-type {
+  display: block;
 }
-aside.loose p:last-of-type {
-  display: unset;
+body > section.result.loose h2:last-of-type {
+  display: block;
 }
