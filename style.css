@@ -7,11 +7,11 @@ html {
   font-size:17px;
   font-family:'Roboto', sans-serif;
 }
-main > h1 {
+header > h1 {
   text-align: center;
   padding: 20px;
 }
-main > section svg {
+header > section svg {
   position: absolute;
   right: 25px;
   top: 25px;
@@ -21,31 +21,36 @@ main > section svg {
   border: none;
   background-color: unset;
 }
-main > section h2 {
+header > section h2 {
   margin: 10px;
 }
-main > section div {
+header > section div {
   padding: 20px;
   display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: .2s ease-in-out;
-  border-radius: 20px;
   position: fixed;
   top: 0;
   background-color: white;
   width: 100%;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
 }
-main > section:hover div,
-main > section:focus div  {
+header > section:hover div,
+header > section:focus div  {
   display: flex;
 }
-main > section div p {
+header > section div p {
   text-align: justify;
 }
-main > button:focus {
+header > button:focus {
   outline: none;
+}
+main {
+  margin-bottom: 20px; 
 }
 main > table {
   margin: auto;
@@ -60,12 +65,12 @@ main > table tr td {
 }
 main > table tr td.virus {
   background-image: url("virus.svg");
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(255, 0, 0, 0.3);
   cursor: unset;
 }
 main > table tr td.cure {
   background-image: url("cure.svg");
-  background-color: rgba(0, 0, 255, 0.5);
+  background-color: rgba(0, 0, 255, 0.3);
   cursor: unset;
 }
 body > section {
@@ -122,4 +127,11 @@ body > section.win h2:first-of-type {
 }
 body > section.loose h2:last-of-type {
   display: block;
+}
+
+@media screen and (orientation: landscape) {
+  main > table tr td {
+    height: 8vh;
+    width: 8vh;
+  }
 }
