@@ -73,7 +73,7 @@ main > table tr td.cure {
   background-color: rgba(0, 0, 255, 0.3);
   cursor: unset;
 }
-body > section {
+body > aside {
   position: fixed;
   top: 0;
   left: 0;
@@ -86,20 +86,20 @@ body > section {
   transition: .2s ease-in-out;
   display: none;
 }
-body > section.loose {
+body > aside.loose {
   color: red;
   display: flex;
 }
-body > section.win {
+body > aside.win {
   color: blue;
   display: flex;
 }
-body > section h2 {
+body > aside h2 {
   display: none;
   font-size: 3rem;
   margin: 10px;
 }
-body > section a {
+body > aside a {
   font-size: 1.5rem;
   padding: 10px;
   text-decoration: none;
@@ -108,24 +108,24 @@ body > section a {
   transition: .2s ease-in-out;
   color: whitesmoke;
 }
-body > section.loose a {
+body > aside.loose a {
   background-color: red;
 }
-body > section.loose a:hover {
+body > aside.loose a:hover {
   color: red;
   background-color: whitesmoke;
 }
-body > section.win a {
+body > aside.win a {
   background-color: blue;
 }
-body > section.win a:hover {
+body > aside.win a:hover {
   color: blue;
   background-color: whitesmoke;
 }
-body > section.win h2:first-of-type {
+body > aside.win h2:first-of-type {
   display: block;
 }
-body > section.loose h2:last-of-type {
+body > aside.loose h2:last-of-type {
   display: block;
 }
 
