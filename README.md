@@ -14,7 +14,13 @@ Zachraňte celé lidstvo! Zabraňte viru uniknout!
 - kliknutím může zabrat svá pole kdekoli chce (může své políčka položit kdekoli chce)
 - jeho políčko je značeno symbolem léku (class="cure" na td tag)
 ### Konec hry
-- po skončení hry se přidá na aside class="loose" (prohra) nebo class="win" (výhra)
+- po skončení hry se přidá na "body > div.result" class="loose" (prohra) nebo class="win" (výhra)
+
+## Seznam class
+- virus - políčko viru (na <td> prvek tabulky)
+- cure - políčko léku (na <td> prvek tabulky)
+- loose - prohra (na <div class="result>)
+- win - výhra (na <div class="result>)
 
 ## Cíl
 Cílem hráče je zabránit viru uniknout.
