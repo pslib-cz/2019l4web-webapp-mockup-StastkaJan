@@ -7,6 +7,9 @@ html {
   font-size:17px;
   font-family:'Roboto', sans-serif;
 }
+body {
+  min-height: 100vh;
+}
 header > h1 {
   text-align: center;
   padding: 20px;
@@ -38,23 +41,26 @@ header > section div {
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
   box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+  z-index: 10;
 }
 header > section:hover div,
 header > section:focus div  {
   display: flex;
 }
-header > section div p {
-  text-align: justify;
+header > section div ul {
+  margin: 10px;
 }
 header > button:focus {
   outline: none;
 }
 main {
-  margin-bottom: 20px; 
+  margin: 0 auto 20px;
+  width: fit-content;
+  position: relative;
 }
 main > table {
-  margin: auto;
   border-collapse: collapse;
+  background-color: #fff;
 }
 main > table tr td {
   height: 9vw;
@@ -62,6 +68,7 @@ main > table tr td {
   border: black 1px solid;
   background-size: contain;
   cursor: pointer;
+  transition: .2s ease-in-out;
 }
 main > table tr td.virus {
   background-image: url("virus.svg");
@@ -73,8 +80,8 @@ main > table tr td.cure {
   background-color: rgba(0, 0, 255, 0.3);
   cursor: unset;
 }
-body > aside {
-  position: fixed;
+body > div {
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -82,50 +89,54 @@ body > aside {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: whitesmoke;
   transition: .2s ease-in-out;
   display: none;
+  background-color: rgba(255, 255, 255, 0.8);
 }
-body > aside.loose {
+body > div.loose {
   color: red;
   display: flex;
 }
-body > aside.win {
+body > div.win {
   color: blue;
   display: flex;
 }
-body > aside h2 {
+body > div h2 {
   display: none;
   font-size: 3rem;
   margin: 10px;
+  text-align: center;
 }
-body > aside a {
+body > div h2 p {
+  font-size: 1rem;
+}
+body > div a {
   font-size: 1.5rem;
   padding: 10px;
   text-decoration: none;
 	border: 2px solid;
   border-radius: 15px;
   transition: .2s ease-in-out;
-  color: whitesmoke;
+  color: #fff;
 }
-body > aside.loose a {
+body > div.loose a {
   background-color: red;
 }
-body > aside.loose a:hover {
+body > div.loose a:hover {
   color: red;
-  background-color: whitesmoke;
+  background-color: #fff;
 }
-body > aside.win a {
+body > div.win a {
   background-color: blue;
 }
-body > aside.win a:hover {
+body > div.win a:hover {
   color: blue;
-  background-color: whitesmoke;
+  background-color: #fff;
 }
-body > aside.win h2:first-of-type {
+body > div.win h2:first-of-type {
   display: block;
 }
-body > aside.loose h2:last-of-type {
+body > div.loose h2:last-of-type {
   display: block;
 }
 

@@ -23,8 +23,11 @@
       </svg>
       <div>
         <h2>Pravidla hry</h2>
-        <p>Cílem je zabránit viru dotknout se stěny hracího pole. Toho docílíte vkládáním polí léku. Ty virus
-          nemůže převzít, ale může je obejít.</p>
+        <ul>
+          <li>Cílem je zabránit viru dotknout se stěny hracího pole.</li>
+          <li>Virus zablokuješ vkládáním polí léku.</li>
+          <li>Tvá pole virus nemůže převzít, ale může je obejít.</li>
+        </ul>
       </div>
     </section>
   </header>
@@ -73,19 +76,7 @@
           <td></td>
           <td></td>
           <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td class="cure"></td>
           <td></td>
           <td></td>
           <td></td>
@@ -96,19 +87,7 @@
           <td></td>
           <td></td>
           <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td class="virus"></td>
           <td></td>
           <td></td>
           <td></td>
@@ -119,9 +98,33 @@
           <td></td>
           <td></td>
           <td></td>
+          <td class="virus"></td>
+          <td class="virus"></td>
+          <td class="virus"></td>
+          <td class="cure"></td>
           <td></td>
           <td></td>
           <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="cure"></td>
+          <td class="virus"></td>
+          <td class="cure"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="cure"></td>
           <td></td>
           <td></td>
           <td></td>
@@ -154,11 +157,15 @@
       </tbody>
     </table>
   </main>
-  <aside>
-    <h2>Vyhrál jsi!</h2>
-    <h2>Prohrál jsi!</h2>
+  <div>
+    <h2>Vyhrál jsi!<br>
+      <p>Těsně jsi unikl smrti a zvítězil jsi nad zákeřným virem.</p>
+    </h2>
+    <h2>Prohrál jsi!<br>
+      <p>Virus tě dostal, teď už lidstvo nikdo nezachrání.</p>
+    </h2>
     <a href="index.html">Hraj znovu!</a>
-  </aside>
+  </div>
 </body>
 
 </html>
