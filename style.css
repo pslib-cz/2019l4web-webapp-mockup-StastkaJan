@@ -54,7 +54,7 @@ header > button:focus {
   outline: none;
 }
 main {
-  margin: 0 auto 20px;
+  margin: 10vh auto 20px;
   width: fit-content;
   position: relative;
 }
@@ -140,7 +140,10 @@ body > div.loose h2:last-of-type {
   display: block;
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) { 
+  main {
+    margin: 0 auto 20px;
+  }
   main > table tr td {
     height: 8vh;
     width: 8vh;
